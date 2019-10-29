@@ -1,29 +1,26 @@
-##How to Use
+## How to Use
 
 LaTeX, prounounced «lah-tech» or «lay-tech» is a typesetting system that is used to prepare and format documents. LaTeX is widely used in the technical and scientific field due to its ability to produce complicated mathematical equations.
 
 More information is available at [The LaTeX Project](https://www.latex-project.org/about/).
 
-###Requirements
+### Requirements
 
 You will need to have a distribution of TeX on your machine. This resume is compatible with [XeTeX](http://xetex.sourceforge.net/).
 
 
-###Usage
+### Usage
 
 At a command prompt with a TeX distribution installed, run:
 
     $ xelatex ./source/coler_taffie_resume.tex
 
 ## Preview
-[Full PDF](/pdf/coler_taffie_resume.pdf)
+Download full PDF version [here](/pdf/coler_taffie_resume.pdf).
 
 ![Resume Preview Page 1](/screenshots/coler_preview_one.png)
 
-![Resume Preview Page 2](/screenshots/coler_preview_two.png)
-
-
-##Contact
+## Contact
 Feel free to reach out on [LinkedIn](https://www.linkedin.com/in/tcoler/).
 
 
