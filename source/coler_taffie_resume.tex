@@ -1,0 +1,149 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS  %
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END DEFINITIONS %
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Taffie Coler}}\\
+	taffie.coler@gmail.com $\cdot$ (512) 962-9096 $\cdot$ www.linkedin.com/in/tcoler/\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Ohio University}\hfill Athens, Ohio\\
+BS Computer Science \hfill Sep 2011 - Dec 2014\\
+\vspace{2mm}
+\textbf{Hocking College}\hfill Nelsonville, Ohio\\
+AS Computer Programming, Network Systems \hfill Sep 2008 - Jun 2011\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{IBM Cloud Garage} \hfill Austin, Texas\\
+\textit{Software Development Consultant Lead} \hfill Jun 2015 - Oct 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Worked directly with domestic and international clients to deliver IBM Cloud-driven solutions. Applications are implemented in a variety of languages depending on the preference of the customer. I am a full-stack and mobile developer as well as a development lead.
+\end{itemize}
+\textbf{IBM Mobile Innovation Lab} \hfill Austin, Texas\\
+\textit{Mobile Software Engineer} \hfill Feb 2015 - Jun 2015\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Rapidly prototyped native and hybrid iOS applications in the financial and transportation sectors using the IBM MobileFirst Platform and Bluemix technologies. Utilized the Watson sentiment analysis API, iOS Core Graphics framework and statistical variance to create a stock quote prediction mobile application. Specially tasked with researching and prototyping an application leveraging iOS 9’s Spotlight search and deep linking.
+\end{itemize}
+\textbf{JPMorgan Chase} \hfill Columbus, Ohio\\
+\textit{Mobile Application Development Intern} \hfill Jun 2014 - Sep 2014\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Worked on Chase iPhone mobile banking applications that have over 10 million active users. Worked with large-scale issue tracking and project management software. Collaborated closely with designers, developing proof of concept apps for prototyping and implemented the new Mobile Statements feature from Proof-of-Concept stage to the integration in the Chase iOS mobile application in the November 2014 release.
+\end{itemize}
+\textbf{LiveInteractive LLC} \hfill Athens, Ohio\\
+\textit{Mobile Software Developer} \hfill Aug 2013 - Jun 2014\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Maintained and developed native iOS applications in a startup company with Objective-C using Xcode and associated tools. Developed the front and back end of a social media application called LiveIn for event tracking. Developed a RESTful API in PHP with Amazon AWS servers in an EC2 instance. Organized and conducted beta tests, implemented collected feedback.
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Languages and Frameworks: & Swift, Objective-C, Node.js, Angular, React, HTML/CSS \\
+	Version Control:          & Git, GitHub, Bitbucket                                \\
+	Technologies:             & SQL, Cloudant, CloudFoundry                           \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Projects}
+{\textbf{American Airlines Dynamic Reaccommodation}} {\sl Swift, Angular} \\
+Added the automatic reaccommodation feature to the American Airlines iOS application using Swift leveraging new APIs our Cloud team helped build using the IBM Cloud platform. Additionally worked on the web portion of their website using Angular to implement the rebooking feature. Development was internationally-focused, including internationalization with both language and time zoning and included ARIA accessibility features.\\
+\vspace*{2mm}
+{\textbf{Travel and Transportation Industry Client Rates Project}} {\sl Node.js, Cloudant} \\
+Led the backend development effort to update and move the existing rental car rates logic to the cloud using Node.js and IBM Cloudant NoSQL database. Wrote detailed unit tests for complex business logic and worked closely with the internal testing team to help implement E2E tests and address bugs. Worked closely with DevOps team to assist deployments.\\
+\vspace*{2mm}
+\pagebreak
+{\textbf{Insurance Client Dynamic Claims Project}} {\sl Cordova, Ionic, Node.js, Google Maps API} \\
+Created a responsive mobile application for insurance appraisers that optimized their daily route that allowed for expedited claims and allowed for extra flexibility, such as dynamic appointments throughout the day. Cut down on paperwork by completely virtualizing claims, showing updated information including insurance photos and documents necessary to make claims. This application won an internal award due to the recognition and praise it earned during the 2017 California wildfires; which expedited claims across the state.\\
+\vspace*{2mm}
+
+\header{Awards}
+\textbf{Putting the Customer First Lab Services Award} \hfill IBM\\
+Received this award for my work with our Travel and Transportation Industry client with IBM for demonstrating leadership and taking the lead on deployments, voluntarily responding over the weekend to help resolve DevOps or related code issues to keep downtime to a minimum. \hfill Sep 2019\\
+\vspace*{2mm}
+\textbf{Unite to Get it Done Lab Services Award} \hfill IBM\\
+Received a Lab Services Award under the category of \textquotedbl{}Unite to Get it Done\textquotedbl{} for putting in long hours and uniting the iOS, backend and website UI teams during my project with our client, American Airlines, during the Dynamic Reaccommodation project. \hfill Mar 2018\\
+\vspace*{2mm}
+\textbf{Putting the Customer First Lab Services Award} \hfill IBM\\
+Received this award for working closely with our customer’s business team, ensuring the application we were building matched the requirements and would not impact the current workflow of the insurance adjusters. Additionally helped set up App Store account and documented submission process for the client’s lead developer who took over the application. \hfill Jun 2017\\
+\vspace*{2mm}
+
+\ 
+\end{document}
