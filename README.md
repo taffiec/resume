@@ -15,10 +15,7 @@ At a command prompt with a TeX distribution installed, run:
 
     $ xelatex ./source/coler_taffie_resume.tex
 
-## Preview
-Download full PDF version [here](/pdf/coler_taffie_resume.pdf).
 
-![Resume Preview Page 1](/screenshots/coler_preview_one.png)
 
 ## Contact
 Feel free to reach out on [LinkedIn](https://www.linkedin.com/in/tcoler/).
